@@ -1,0 +1,13 @@
+Understanding how the brain accumulates evidence to make decisions is a goal in cognitive neuroscience. Decision-making processes are often modeled using Sequential Sampling Models (SSMs), which describe how information is gradually integrated until a decision threshold is reached. Among these, the Drift Diffusion Model (DDM) and Linear Ballistic Accumulator (LBA) have been widely used to explain behavioral and neural data. More recently, the KellyModel has introduced additional parameters to enhance biological plausibility. 
+
+However, directly linking such models to electroencephalography (EEG) data remains a challenge. In this work, we address this gap by developing a computational toolbox that enables EEG simulations based on SSMs to systematically investigate how these models can be mapped to neuronal activity. The toolbox was developed for seamless integration into UnfoldSim.jl, a Julia-based package for EEG simulations. The overall package allows researchers to study the decision-making processes and their influence on the event-related potentials (ERPs) through the possibility of creating simulations. The work provides examples of testing deconvolution techniques using the toolbox created. This addresses component overlap in EEG signals, which is a well-known challenge in cognitive neuroscience.
+
+The toolbox was seamlessly integrated into UnfoldSim.jl with a modular design, comprehensive test coverage, and detailed documentation, ensuring ease of use and extensibility. This structured integration into the UnfoldSim.jl package supports the use of the implementation throughout the entire Unfold toolbox.
+
+This work contributes to computational neuroscience by providing a flexible and extensible toolbox for EEG research. Future studies may refine model parameters, validate simulations against real EEG data, and incorporate adaptive modeling approaches to improve accuracy and applicability in decision-making research.
+
+Keywords: Electroencephalography (EEG) Simulation,
+Sequential Sampling Models (SSMs),
+Decision-Making Processes.
+Computational Neuroscience.
+UnfoldSim.jl Integration

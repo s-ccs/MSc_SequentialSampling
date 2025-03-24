@@ -1,0 +1,38 @@
+[conf]
+default-lang = "de"
+
+[lang.en]
+in-study = "in"
+submitted-to = "submitted in partial fulfillment of the requirements for the degree of"
+submitted-by = "by"
+student-number = "Registration Number"
+at-faculty = "to the Faculty of Computer Science"
+at-U = "at the University of Stuttgart"
+advisor = "Advisor"
+assistance = "Assistance"
+city = "Stuttgart"
+dissertation-reviewed-by = "The dissertation has been reviewed by"
+
+statement = "Declaration of Authorship"
+statement-own-work = """I hereby declare that the work presented in this thesis is entirely my own. I did not use any other sources and references that the listed ones. I have marked all direct or indirect statements from other sources contained therein as quotations. Neither this work nor significant parts of it were part of another examination procedure. I have not published this work in whole or in part before. The electronic copy is consistent with all submitted hard copies."""
+statement-own-work-de = """Ich versichere, diese Arbeit selbstständig verfasst zu haben. Ich habe keine anderen als die angegebenen Quellen benutzt und alle wörtlich oder sinngemäß aus anderen Werken übernommene Aussagen als solche gekennzeichnet. Weder diese Arbeit noch wesentliche Teile daraus waren bisher Gegenstand eines anderen Prüfungsverfahrens. Ich habe diese Arbeit bisher weder teilweise noch vollständig veröffentlicht. Das elektronische Exemplar stimmt mit allen eingereichten Exemplaren überein."""
+[lang.de]
+in-study = "im Rahmen des Studiums"
+submitted-to = "zur Erlangung des akademischen Grades"
+submitted-by = "eingereicht von"
+student-number = "Matrikelnummer"
+at-faculty = "an der Fakultät für Informatik"
+at-U = "der Universität Stuttgart"
+advisor = "Betreuung"
+assistance = "Mitwirkung"
+city = "Stuttgart"
+dissertation-reviewed-by = "Diese Dissertation haben begutachtet"
+
+U = "Universität Stuttgart"
+U-postal = "D-70174 Stuttgart"
+U-address = "Keplerstraße 7"
+U-tel = "Tel. +49 711 685-0"
+U-web = "www.uni-stuttgart.de"
+
+statement = "Erklärung zur Verfassung der Arbeit"
+statement-own-work = """Ich versichere, diese Arbeit selbstständig verfasst zu haben. Ich habe keine anderen als die angegebenen Quellen benutzt und alle wörtlich oder sinngemäß aus anderen Werken übernommene Aussagen als solche gekennzeichnet. Weder diese Arbeit noch wesentliche Teile daraus waren bisher Gegenstand eines anderen Prüfungsverfahrens. Ich habe diese Arbeit bisher weder teilweise noch vollständig veröffentlicht. Das elektronische Exemplar stimmt mit allen eingereichten Exemplaren überein."""

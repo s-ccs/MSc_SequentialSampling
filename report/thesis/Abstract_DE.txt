@@ -1,0 +1,13 @@
+Ein Ziel der kognitiven Neurowissenschaften ist es zu verstehen, wie das Gehirn Informationen sammelt, um Entscheidungen zu treffen. Entscheidungsprozesse werden häufig mit Hilfe von Sequential-Sampling-Modellen (SSM) modelliert, die beschreiben, wie Informationen schrittweise integriert werden, bis eine Entscheidungsschwelle erreicht ist. Das Drift-Diffusions-Modell (DDM) und der lineare ballistische Akkumulator (LBA) wurden häufig zur Erklärung von Verhaltens- und neuronalen Daten verwendet. In jüngerer Zeit wurden mit dem Kelly-Modell zusätzliche Parameter eingeführt, um die biologische Plausibilität zu erhöhen.
+
+Die direkte Verknüpfung solcher Modelle mit Elektroenzephalographie (EEG)-Daten bleibt jedoch eine Herausforderung. In dieser Arbeit wird diese Lücke durch die Entwicklung einer Toolbox geschlossen, die EEG-Simulationen auf der Grundlage von SSMs ermöglicht, um systematisch zu untersuchen, wie diese Modelle auf die neuronale Aktivität abgebildet werden können. Die Toolbox wurde für eine nahtlose Integration in UnfoldSim.jl, ein Julia-basiertes Paket für EEG-Simulationen, entwickelt. Das Gesamtpaket ermöglicht es Forschern, die Entscheidungsprozesse und deren Einfluss auf die ereigniskorrelierten Potentiale (ERPs) durch die Möglichkeit der Erstellung von Simulationen zu untersuchen. Die Arbeit liefert Beispiele für das Testen von Dekonvolutionstechniken unter Verwendung der erstellten Toolbox. Damit werden Komponentenüberlappungen in EEG-Signalen adressiert, die in den kognitiven Neurowissenschaften eine bekannte Herausforderung darstellen.
+
+Die Toolbox wurde nahtlos in UnfoldSim integriert, mit einem modularen Design, umfassender Testabdeckung und detaillierter Dokumentation, die Benutzerfreundlichkeit und Erweiterbarkeit gewährleistet. Diese strukturierte Integration in das UnfoldSim.jl Paket unterstützt die Nutzung der Implementierung in der gesamten Unfold Toolbox.
+
+Diese Arbeit trägt zur Computational Neuroscience bei, indem sie einen flexiblen und erweiterbaren Werkzeugkasten für die EEG-Forschung bereitstellt. Zukünftige Studien können Modellparameter verfeinern, Simulationen mit realen EEG-Daten validieren und adaptive Modellansätze integrieren, um die Genauigkeit und Anwendbarkeit in der Entscheidungsforschung zu verbessern.
+
+Keywords: Electroencephalography (EEG) Simulation,
+Sequential Sampling Models (SSMs),
+Decision-Making Processes.
+Computational Neuroscience.
+UnfoldSim.jl Integration

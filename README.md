@@ -1,23 +1,31 @@
-# **MSc-Thesis:** On the simulation of GIT-Templates for BSc-Theses
-**Author:** *Benedikt Ehinger*
+# **MSc-Thesis:** Simulation of EEG Activity Based on Sequential Sampling Models
+**Author:** *Timo Zaoral*
 
-**Supervisor(s):** *Supervisor 1*, *Supervisor 2*
+**Supervisor(s):** *Benedikt Ehinger*
 
-**Year:** *2022*
+**Year:** *2024/2025*
 
 ## Project Description
->provide a short description of the main goals - just copy from the proposal
+>The primary aim of this thesis is to investigate the relationship between Sequential Sampling Models (SSMs) and evidence accumulation processes as observed in EEG data. Therefore the thesis seeks to provide a computational framework for simulating EEG data using different SSMs to explore how these models reflect the evidence accumulation process in the brain. The computational framework is to be integrated into the existing Julia package for simulating EEG data UnfoldSim.jl (https://github.com/unfoldtoolbox/UnfoldSim.jl).
 
 ## Zotero Library Path
->Please provide the link to the Zotero group here or include a `Bib`-File in the `report` folder
+`Bib`-File in the `report` folder: report/thesis/Master_Thesis_Zaoral_Timo/refs.bib
 
 ## Instruction for a new student
->If a fellow student wants to reproduce all your results. What scripts, in which order, with which data need to be run?
->
->Be as specific as possible. Plan to spend **at least 1h** on this.
->
->Optional: Add a pipeline plot in which the different steps are displayed together with the corresponding scripts.
+The first step is to create a virtual Julia environment.
+The UnfoldSim.jl repository with the extension must then be cloned into the environment or the release version of UnfoldSim.jl must be installed in which the extension is already included.
+In addition, the following packages must be installed in the environment for most use cases:
+- UnfoldSim
+- Unfold
+- StableRNGs
+- SequentialSamplingModels
+- CairoMakie
+- UnfoldMakie
 
+The following notebooks can be used to reconstruct the diagrams from the thesis:
+nb_ThesisPlots.ipynb, Use_Cases: nb_Simulation_Space.ipynb, nb_Comment_Rebuild.ipynb, nb_Kelly_Overlap_Simulation.ipynb, nb_No_Ramp_after_deconv.ipynb
+
+The ThesisPlots are simple illustrating Figures for the thesis. The Simulation Space notebook contains the sample figure creation for each SequentialSampling Model (LBA,DDM,KellyModel) and the other use case notebooks the described use cases from the thesis section 4.2.
 ## Overview of Folder Structure 
 
 ```
@@ -30,35 +38,25 @@
 │   ├── talks        <- PDFs (and optionally pptx etc) of the Intro,
 |   |                   Midterm & Final-Talk
 |
-├── _research        <- WIP scripts, code, notes, comments,
-│   |                   to-dos and anything in an alpha state.
+├── _research        <- writing tips for the thesis
 │
-├── plots            <- All exported plots go here, best in date folders.
-|   |                   Note that to ensure reproducibility it is required that all plots can be
+├── plots            <- All exported plots go here.
+|   |                   all plots can be
 |   |                   recreated using the plotting scripts in the scripts folder.
-|
-├── notebooks        <- Pluto, Jupyter, Weave or any other mixed media notebooks.*
 │
-├── scripts          <- Various scripts, e.g. simulations, plotting, analysis,
-│   │                   The scripts use the `src` folder for their base code.
+├── scripts          <- Various scripts/notebooks, e.g. simulations, plotting, analysis,
 │
-├── src              <- Source code for use in this project. Contains functions,
+├── src              <- Dev source code of this project. Contains functions,
 │                       structures and modules that are used throughout
-│                       the project and in multiple scripts.
+│                       the project and build the basis for the integration of the extension.
 │
-├── test             <- Folder containing tests for `src`.
-│   └── runtests.jl  <- Main test file
-│   └── setup.jl     <- Setup test environment
+├── test             <- Contains README with information about the tests.
 │
-├── README.md        <- Top-level README. A fellow student needs to be able to
-|   |                   continue your project. Think about her!!
+├── README.md        <- Top-level README.
 |
 ├── .gitignore       <- focused on Julia, but some Matlab things as well
 │
 ├── (Manifest.toml)  <- Contains full list of exact package versions used currently.
 |── (Project.toml)   <- Main project file, allows activation and installation.
-└── (Requirements.txt)<- in case of python project - can also be an anaconda file, MakeFile etc.
                         
 ```
-
-\*Instead of having a separate *notebooks* folder, you can also delete it and integrate your notebooks in the scripts folder. However, notebooks should always be marked by adding `nb_` in front of the file name.
